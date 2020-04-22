@@ -72,7 +72,7 @@ StScrollView StScrollBar {
 }
 
 StScrollBar StBin#trough {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,43,54,0.3);
     border-radius: 8px;
 }
 
@@ -163,7 +163,7 @@ StScrollBar StButton#vhandle:active {
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer {
     -arrow-border-radius: 8px;
-    -arrow-background-color: rgba(0,0,0,0.8);
+    -arrow-background-color: rgba(0,43,54,0.8);
     -arrow-border-width: 1px;
     -arrow-border-color: rgba(255,255,255,0.15);
     -arrow-base: 24px;
@@ -187,7 +187,7 @@ StScrollBar StButton#vhandle:active {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(255,255,255,0.1);
     background-gradient-end: rgba(255,255,255,0.1);
-    /*box-shadow: inset 0 2px 4px rgba(0,0,0,0.9);*/
+    /*box-shadow: inset 0 2px 4px rgba(0,43,54,0.9);*/
     box-shadow: none;
 }
 
@@ -250,7 +250,7 @@ StScrollBar StButton#vhandle:active {
     /*TODO - tweak size, colour, fix padding?*/
     margin: 6px 64px;
     background-color: transparent;
-    border-color: #333;
+    border-color: #cb4b16;
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
@@ -466,8 +466,8 @@ StScrollBar StButton#vhandle:active {
     padding: 4px 12px;
 
     border: 1px solid transparent;
-    background-gradient-start: rgba(0,0,0,0);
-    background-gradient-end: rgba(0,0,0,0);
+    background-gradient-start: rgba(0,43,54,0);
+    background-gradient-end: rgba(0,43,54,0);
     background-gradient-direction: vertical;
     transition-duration: 300ms;
 
@@ -480,8 +480,8 @@ StEntry {
     box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     border: none;
-    background-gradient-start: rgba(0,0,0,0);
-    background-gradient-end: rgba(0,0,0,0);
+    background-gradient-start: rgba(0,43,54,0);
+    background-gradient-end: rgba(0,43,54,0);
     background-gradient-direction: vertical;
     selection-background-color: #d9d9d9;
 }
@@ -621,7 +621,7 @@ StEntry {
 
 /* used for the app menu header only */
 .label-shadow {
-    color: rgba(0,0,0,0.3);
+    color: rgba(0,43,54,0.3);
 
     /*text-shadow: black 0 1px 4px;*/
     /*NOTE - sometimes shows extra shadow, sometimes just this*/
@@ -639,7 +639,7 @@ StEntry {
 .panel-button:active .label-shadow,
 .panel-button:overview .label-shadow,
 .panel-button:focus .label-shadow {
-    color: rgba(0,0,0,0.3);
+    color: rgba(0,43,54,0.3);
 }
 
 /*added because 3.16??*/
@@ -713,7 +713,7 @@ StEntry {
     */
     background-image: none;
     border-image: none;
-    color: white;
+    color: orange;
     text-shadow: black 0 1px 4px;
 }
 
@@ -818,14 +818,14 @@ StEntry {
 }
 
 .workspace-thumbnail-indicator {
-    border: 4px solid rgba(255,255,255,0.5);
+    border: 4px solid rgba(203,75,22,0.7);
     border-radius: 4px;
     padding: 1px;
 }
 
 .window-caption {
     spacing: 25px;
-    background: transparent;
+    background: rgba(203,75,22,0.7);
     border-radius: 8px;
     padding: 4px 12px;
     -shell-caption-spacing: 12px;
@@ -847,13 +847,13 @@ StEntry {
     color: #fff;
 
     /* NOTE: Using a radial gradient instead of text-shadow cause text-shadow doesn't work */
-    background-gradient-start: rgba(0,0,0,0.6);
+    background-gradient-start: rgba(0,43,54,0.6);
     background-gradient-end: transparent;
     background-gradient-direction: radial;
 }
 
 .window-close:hover, .notification-close:hover {
-    background-gradient-start: rgba(0,0,0,0.8);
+    background-gradient-start: rgba(0,43,54,0.8);
 }
 
 .window-close {
@@ -861,7 +861,7 @@ StEntry {
 }
 
 .window-clone-border {
-    border: 4px solid rgba(255, 255, 255, 0.5);
+    border: 4px solid rgba(203,75,22,0.7);
     border-radius: 4px;
 }
 
@@ -886,7 +886,7 @@ StEntry {
 }
 
 .window-close:rtl {
-    -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    -st-background-image-shadow: 2px 2px 6px rgba(0,43,54,0.5);
 }
 
 .window-picker {
@@ -957,7 +957,7 @@ StEntry {
 .dash-label {
     border-radius: 7px;
     padding: 4px 12px;
-    background-color: transparent /*rgba(0,0,0,0.3)*/;
+    background-color: transparent /*rgba(0,43,54,0.3)*/;
     text-align: center;
     border: none;
     -x-offset: 8px;
@@ -968,7 +968,7 @@ StEntry {
     text-shadow: black 0 1px 2px;
 
     /*border-radius: 8px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,43,54,0.8);
     border-width: 1px;
     border-color: rgba(255,255,255,0.15);*/
 }
@@ -1135,7 +1135,7 @@ StEntry {
 .grid-search-result .overview-icon {
     border-radius: 4px;
     padding: 6px;
-    border: 1px rgba(0,0,0,0);
+    border: 1px rgba(0,43,54,0);
     transition-duration: 100ms;
     text-align: center;
 }
@@ -1146,7 +1146,7 @@ StEntry {
 
 .app-folder-popup {
     -arrow-border-radius: 8px;
-    -arrow-background-color: rgba(0,0,0,0.4);
+    -arrow-background-color: rgba(0,43,54,0.4);
     -arrow-border-width: 1px;
     -arrow-border-color: rgba(255,255,255,0.05);
     -arrow-base: 24px;
@@ -1168,7 +1168,7 @@ StEntry {
 */
 
 .app-well-app-running-dot {
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(203,75,22,0.7);
     height: 0.4em;
     width: 1em;
     border-radius: 0.2em;
@@ -1191,7 +1191,7 @@ StEntry {
 }
 
 .app-well-app.app-folder > .overview-icon {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,43,54,0.3);
 }
 /* NOTE - hover app */
 .app-well-app:hover > .overview-icon,
@@ -1209,7 +1209,7 @@ StEntry {
 .app-well-app.app-folder:drop .overview-icon,
 .show-apps:drop .overview-icon,
 .grid-search-result:drop .overview-icon {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,43,54,0.8);
 }
 
 .app-display .app-well-app > .overview-icon {
@@ -1217,7 +1217,7 @@ StEntry {
 }
 
 .list-search-result:hover .list-search-result-description {
-    text-shadow: rgba(0,0,0,0.8) 0 1px 2px;
+    text-shadow: rgba(0,43,54,0.8) 0 1px 2px;
 }
 
 .show-apps {
@@ -1301,7 +1301,7 @@ find what's theming them and make sure they're all the same*/
 /* LookingGlass */
 
 #LookingGlassDialog {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,43,54,0.8);
     spacing: 4px;
     padding: 4px;
     border: 2px solid grey;
@@ -1427,8 +1427,8 @@ find what's theming them and make sure they're all the same*/
 
 .calendar-vertical-separator {
     -stipple-width: 0;
-    -stipple-color: #505050;
-    background-color: rgba(255,255,255,0.15);
+    -stipple-color: #cb4b16;
+    background-color: rgba(203,75,22,0.5);
     width: 1px;
 }
 
@@ -1442,11 +1442,12 @@ find what's theming them and make sure they're all the same*/
     padding: .2em 1.75em .4em 1.75em;
     spacing-rows: 0;
     spacing-columns: 0;
+    border-color: rgba(203,75,22,0.7);
     background-color: transparent;
 }
 
 .calendar-month-label {
-    color: rgb(192,192,192);
+    color: rgba(192,192,192);
     font-size: 10pt;
     font-weight: bold;
     padding-bottom: 6px;
@@ -1478,7 +1479,7 @@ find what's theming them and make sure they're all the same*/
 
 .calendar-change-month-back:hover StIcon,
 .calendar-change-month-forward:hover StIcon {
-    color: #fff;
+    color: #cb4b16;
 }
 .calendar-change-month-back:active,
 .calendar-change-month-forward:active {
@@ -1545,9 +1546,11 @@ find what's theming them and make sure they're all the same*/
 }
 
 .calendar-day-heading {
-    color: rgb(192,192,192);
+   /*color: rgb(192,192,192);*/
+    color: #cb4b16;
     padding-top: .2em;
     height: 1.7em;
+    font-weight: bold;
 }
 
 .calendar-week-number {
@@ -1580,13 +1583,18 @@ find what's theming them and make sure they're all the same*/
 }
 
 .calendar-today,
-.calendar-today:active,
+.calendar-today:active {
+    color: #cb4b16;
+    text-shadow: #000 0 2px 2px;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.4);
+}
 .calendar-today:hover {
     /*background-image: url("assets/calendar-today.svg");
     text-shadow: black 0 1px 2px;
     font-weight: bold;*/
 
-    color: #fff;
+    color: #cb4b16;
     text-shadow: #000 0 2px 2px;
     font-weight: bold;
     background-color: rgba(255,255,255,0.4);
@@ -1620,6 +1628,8 @@ find what's theming them and make sure they're all the same*/
 .world-clocks-button:focus { /*bacon*/
     background-color: transparent;
     border-radius: 4px; /*just needs to be big enough for 50% rounding*/
+    /*border-color: #cb4b16;*/
+    border-color: rgba(203,75,22,0.7);
     padding: 8px 16px;
     color: #d9d9d9;
 }
@@ -1699,7 +1709,7 @@ can I make just the innermost one do things, so it's not huge?*/
 .notification {
     border-radius: 8px 8px 0 0;
     border: 1px solid rgba(255,255,255,0.15); /* TODO !!! - notification popups double-border on opened chats?, removable, etc. (try setting to red or transparent*/
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,43,54,0.8);
     padding: 8px 8px 4px 8px;
     spacing-rows: 4px;
     spacing-columns: 10px;
@@ -1731,7 +1741,7 @@ can I make just the innermost one do things, so it's not huge?*/
 
 .summary-boxpointer {
     -arrow-border-radius: 8px;
-    -arrow-background-color: rgba(0,0,0,0.8);
+    -arrow-background-color: rgba(0,43,54,0.8);
     -arrow-border-width: 1px;
     -arrow-border-color: rgba(255,255,255,0.15);
     -arrow-base: 24px;
@@ -1742,7 +1752,7 @@ can I make just the innermost one do things, so it's not huge?*/
 
 .summary-boxpointer .notification {
     border-radius: 8px;
-    background: rgba(0,0,0,0) !important;
+    background: rgba(0,43,54,0) !important;
     padding-bottom: 12px;
 }
 
@@ -1996,7 +2006,7 @@ can I make just the innermost one do things, so it's not huge?*/
 
     /*********/
     background-color: #e6e6e6;
-    box-shadow: 4px solid rgba(0,0,0,0.6);
+    box-shadow: 4px solid rgba(0,43,54,0.6);
     border-radius: 1em;
     color: #333;
 }
@@ -2008,7 +2018,7 @@ can I make just the innermost one do things, so it's not huge?*/
     spacing: 1em;
 
     /* NOTE - taken from .switcher-list below */
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,43,54,0.4);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 24px;
     padding: 20px;
@@ -2029,7 +2039,7 @@ can I make just the innermost one do things, so it's not huge?*/
 
 /*get rid of padding around outlined box, add shadow(s)?*/
 .switcher-list {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,43,54,0.4);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 24px;
     padding: 20px;
@@ -2042,13 +2052,13 @@ can I make just the innermost one do things, so it's not huge?*/
 .switcher-list .item-box {
     padding: 8px;
     border-radius: 8px;
-    /*background-color: rgba(0,0,0,0.4);
-    box-shadow: 0 0 4px rgba(0,0,0,1);*/
+    /*background-color: rgba(0,43,54,0.4);
+    box-shadow: 0 0 4px rgba(0,43,54,1);*/
 }
 
 .switcher-list .item-box:outlined {
     padding: 6px;
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0,43,54,0);
     background-gradient-start: transparent;
     background-gradient-end: rgba(255,255,255,0.1);
     background-gradient-direction: vertical;
@@ -2092,12 +2102,12 @@ can I make just the innermost one do things, so it's not huge?*/
 }
 
 .switcher-arrow {
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0,43,54,0);
     color: #e6e6e6;
 }
 
 .switcher-arrow:highlighted {
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0,43,54,0);
     color: white;
 }
 
@@ -2107,7 +2117,7 @@ can I make just the innermost one do things, so it's not huge?*/
 }
 
 .workspace-switcher-container {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,43,54,0.8);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 24px;
     padding: 0;
@@ -2163,7 +2173,7 @@ can I make just the innermost one do things, so it's not huge?*/
 
 .modal-dialog {
     border-radius: 24px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,43,54,0.8);
     border: 1px solid rgba(255,255,255,0.15);
 
     padding-right: 42px;
@@ -2429,7 +2439,7 @@ need to reset default to zero since middle ones curve now*/
 }
 
 .hidden {
-    color: rgba(0,0,0,0);
+    color: rgba(0,43,54,0);
 }
 
 .prompt-dialog-null-label {
@@ -2486,7 +2496,7 @@ need to reset default to zero since middle ones curve now*/
 /* On-screen Keyboard */
 
 #keyboard {
-    background: rgba(0,0,0,0.85); /*NOTE - 0.8 is standard, want 0.85 or 0.9 for visibility?*/
+    background: rgba(0,43,54,0.85); /*NOTE - 0.8 is standard, want 0.85 or 0.9 for visibility?*/
 }
 
 .keyboard-layout {
@@ -2559,7 +2569,7 @@ need to reset default to zero since middle ones curve now*/
 .keyboard-subkeys {
     padding: 5px;
     -arrow-border-radius: 10px;
-    -arrow-background-color: rgba(0,0,0,0.85); /*TODO - keep in line with above*/
+    -arrow-background-color: rgba(0,43,54,0.85); /*TODO - keep in line with above*/
     -arrow-border-width: 1px;
     -arrow-border-color: rgba(255,255,255,0.15);
     -arrow-base: 20px;
@@ -2658,7 +2668,7 @@ need to reset default to zero since middle ones curve now*/
 }
 
 .popup-menu-arrow {
-    icon-shadow: rgba(0,0,0,0.6) 0 0.5px 4px; /*TODO ish - for some reason shadow is darker than the rest, this seems okay*/
+    icon-shadow: rgba(0,43,54,0.6) 0 0.5px 4px; /*TODO ish - for some reason shadow is darker than the rest, this seems okay*/
 }
 
 /* Tile previews */
@@ -2688,7 +2698,7 @@ need to reset default to zero since middle ones curve now*/
 }
 
 .notification-banner {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,43,54,0.8);
     border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.15);
     color:  #e6e6e6;
@@ -2863,15 +2873,15 @@ need to reset default to zero since middle ones curve now*/
 
 /*NOTE - the actual popup notification*/
 .message {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,43,54,0.6);
     transition-duration: 200ms;
 }
 .message:hover,
 .message:focus {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,43,54,0.8);
 }
 /*to make notification background invisible in side-pane,
-since it has the rgba(0,0,0,0.8) background already,
+since it has the rgba(0,43,54,0.8) background already,
 otherwise it layers on top*/
 .message-list-sections .message {
     background-color: transparent;
